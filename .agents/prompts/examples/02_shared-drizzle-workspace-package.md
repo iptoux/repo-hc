@@ -1,9 +1,8 @@
 # Prompt: Shared Drizzle Workspace Package
 
 ## Links
-- README: `../README.md`
-- Learning: `../learnings/02_shared-drizzle-workspace-package.md`
-- Plan: `../global-drizzle-package-plan.md`
+- README: `../../README.md`
+- Learning: `../../learnings/examples/02_shared-drizzle-workspace-package.md`
 
 ## Original Prompt
 ```text

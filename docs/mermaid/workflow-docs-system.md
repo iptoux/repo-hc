@@ -1,11 +1,10 @@
-# Workflow Docs System (Mermaid)
+﻿# Workflow Docs System (Mermaid)
 
 Back to docs:
 
 - [Docs Home](../README.md)
 - [Workflow Documentation](../workflow/README.md)
-- [Workflow Developer Guide](../workflow/developers.md)
-- [Workflow User Guide](../workflow/users.md)
+- [Housekeeping Documentation](../housekeeping/README.md)
 
 ## Self-Contained Documentation Structure
 
@@ -15,17 +14,16 @@ flowchart LR
   FEATURE --> DEV["docs/<feature>/developers.md"]
   FEATURE --> USER["docs/<feature>/users.md"]
   FEATURE --> MMD["docs/mermaid/*"]
-  AGENTS[".agents/ rules + plans + learnings"] --> DEV
-  AGENTS --> FEATURE
+  AGENTS[".agents/rules + plans + learnings + prompts"] --> FEATURE
 ```
 
 ## Documentation Sync Workflow
 
 ```mermaid
 flowchart LR
-  CHANGE["Code / Behavior Change"] --> CHECK["Check Impact Scope"]
-  CHECK --> DOCS["Update Feature Docs"]
+  CHANGE["Behavior / Workflow Change"] --> SCOPE["Scope Review"]
+  SCOPE --> DOCS["Update Feature Docs"]
   DOCS --> DIAGRAMS["Update Mermaid Diagrams"]
-  DIAGRAMS --> INDEX["Update docs/README links"]
+  DIAGRAMS --> INDEX["Update docs/README Index"]
   INDEX --> REVIEW["PR Review"]
 ```

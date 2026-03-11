@@ -1,74 +1,52 @@
-# Workflow Developer Guide
+﻿# Workflow Developer Guide
 
-This guide explains the repository workflow for contributors, maintainers, and reviewers.
+This guide defines the default workflow for maintaining `repo-hc`.
 
 ## Why This Workflow Exists
 
-The project uses a strict workflow to keep changes safe, reviewable, and maintainable as more contributors join:
+The project is intended for AI-assisted repository housekeeping. To keep changes safe and reviewable, every feature follows a strict process:
 
-- dedicated feature branches
-- scoped implementation plans before coding
-- self-contained docs updates in the same change
-- architecture/workflow diagrams aligned with implementation
-
-This reduces hidden decisions, stale docs, and hard-to-review PRs.
+- dedicated feature branch
+- scoped implementation plan before coding
+- focused implementation
+- synchronized docs and Mermaid diagrams in the same change
 
 ## Core Workflow
 
-1. Create a dedicated feature branch.
-2. Create a scoped plan (`.agents/plans/*.md`).
-3. Implement small, focused changes.
-4. Update feature docs (`docs/<feature>/{README,developers,users}.md`).
-5. Update Mermaid diagrams for architecture/workflow changes.
-6. Run validation checks.
-7. Open a PR with implementation + docs together.
+1. Create a feature branch.
+2. Write a scoped plan in `.agents/plans/`.
+3. Implement focused changes.
+4. Update `docs/<feature>/` docs.
+5. Update `docs/mermaid/` diagrams when architecture or workflow changes.
+6. Validate consistency and open PR.
 
 ```mermaid
 flowchart LR
   A["Feature Idea"] --> B["Feature Branch"]
   B --> C["Scoped Plan"]
   C --> D["Implementation"]
-  D --> E["Tests/Validation"]
-  E --> F["Docs + Mermaid Sync"]
+  D --> E["Docs + Mermaid Sync"]
+  E --> F["Validation"]
   F --> G["PR Review"]
   G --> H["Merge"]
 ```
 
-## Self-Contained Docs System
+## Documentation Sync Expectations
 
-The docs model is designed so contributors can understand and modify a feature without external context:
-
-- each feature has `README.md`, `developers.md`, and `users.md`
-- architecture/workflow visualizations live in `docs/mermaid/`
-- `docs/README.md` is the global index and reading map
-- `.agents/` preserves reusable internal project guidance
-
-## How This Keeps PRs Clean
-
-- Scope clarity: branch + plan make intent explicit before code changes.
-- Review clarity: implementation and docs change together, reducing ambiguity.
-- Change traceability: decisions and workflows are discoverable in one place.
-- Lower regression risk: reviewers can validate behavior against updated docs/diagrams.
-- Faster onboarding: less tribal knowledge and fewer assumptions in review threads.
-
-## Community Contribution Standards
-
-- Keep changes focused and modular.
-- Prefer small PRs over large mixed changes.
-- Update docs in the same PR when behavior/workflow changes.
-- Keep security boundaries explicit (server-side authz, secrets server-only).
-- Avoid undocumented environment/config changes.
+- keep behavior and docs in one PR
+- keep links valid
+- keep terminology consistent across `AGENTS.md`, `.agents`, and `docs/`
+- avoid stale architecture diagrams
 
 ## Developer Checklist
 
 Before opening a PR:
 
-1. Branch is feature-scoped and not `main`.
-2. Plan exists and matches implementation.
-3. Docs are updated (`developers.md`, `users.md`, `README.md`).
-4. Mermaid diagrams match runtime/architecture reality.
-5. Commands in docs are executable and current.
-6. Security and server/client boundaries remain correct.
+1. branch is feature-scoped and not `main`
+2. plan exists and matches implementation
+3. feature docs are updated (`README.md`, `developers.md`, `users.md`)
+4. Mermaid diagrams match current workflow/architecture
+5. security guidance remains accurate
 
 ## Related
 

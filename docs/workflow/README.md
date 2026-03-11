@@ -1,6 +1,6 @@
-# Workflow Documentation
+﻿# Workflow Documentation
 
-Guides for the repository workflow that keeps implementation, documentation, and review quality aligned for community contributions.
+Guides for the contributor workflow that keeps implementation quality, documentation quality, and review clarity aligned.
 
 ## Guides
 
@@ -9,6 +9,7 @@ Guides for the repository workflow that keeps implementation, documentation, and
 
 ## Mermaid Diagrams
 
+- [Housekeeping Package Architecture](../mermaid/housekeeping-architecture.md)
 - [Docs System and Sync Flow](../mermaid/workflow-docs-system.md)
 - [Community PR Lifecycle](../mermaid/workflow-community-pr-lifecycle.md)
 

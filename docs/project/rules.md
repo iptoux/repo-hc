@@ -1,48 +1,53 @@
-# Project Developer Rules
+﻿# Project Rules
 
-This document defines global developer rules that apply to all features and contributors.
+These rules apply to all contributors and all AI-assisted changes in this repository.
 
-## Required Workflow For Every Feature
+## Required Workflow
 
-1. Create a dedicated feature branch (do not implement features directly on `main`).
-2. Create a scoped implementation plan before writing code.
-3. Keep implementation, tests, and documentation in sync in the same change.
+1. Create a dedicated feature branch.
+2. Create a scoped implementation plan before coding (`.agents/plans/*.md`).
+3. Keep implementation and documentation synchronized in the same change.
 
-## AI-Assisted Development (Required)
+## AI-Assisted Work (Required)
 
-If AI is used (planning, coding, review, docs), contributors must follow the root [AGENTS.md](../../AGENTS.md) and its linked `.agents` guidance.
+If AI is used for planning, implementation, review, or docs:
 
-## Environment Variables
+- follow [AGENTS.md](../../AGENTS.md)
+- apply relevant guidance from `.agents/rules`, `.agents/learnings`, `.agents/prompts`, and `.agents/skills`
+- treat `.agents/rules` as user-defined source-of-truth for operational behavior
 
-When a new environment variable is introduced:
+## Documentation Requirements
 
-1. Add it to `.env.example` in the same change.
-2. Never commit real secrets.
-3. Document it in relevant developer docs (at minimum feature docs), including:
-   - purpose
-   - server-only vs public scope
-   - expected format/example placeholder
-   - fallback/default behavior (if any)
+For behavior, architecture, or workflow changes, update in the same change:
 
-## Documentation Standards
-
-For in-scope feature changes, documentation must include:
-
+- `docs/<feature>/README.md`
 - `docs/<feature>/developers.md`
 - `docs/<feature>/users.md`
-- `docs/<feature>/README.md`
-- `docs/mermaid/*` updates when architecture/workflow changes
-- updates in `docs/README.md` so links stay discoverable
+- `docs/mermaid/*` diagrams when architecture/workflow changes
+- `docs/README.md` index links
 
 ## Security Baseline
 
-- Keep secrets server-side only.
-- Enforce auth and authorization on the server.
-- Validate untrusted input.
-- Avoid leaking sensitive internal details in errors and responses.
+- never commit secrets or unmasked sensitive data
+- validate untrusted input
+- enforce least-privilege for automation permissions
+- avoid leaking sensitive details in logs and errors
+
+## Environment Variables
+
+When introducing a new environment variable:
+
+1. add it to `.env.example` in the same change
+2. document purpose, scope, format, and fallback behavior in relevant developer docs
+3. never commit real values
 
 ## Reference Rules
 
-- [.agents/rules/05_use-dedicated-branch-for-large-features.md](../../.agents/rules/05_use-dedicated-branch-for-large-features.md)
-- [.agents/rules/07_require-comprehensive-feature-docs.md](../../.agents/rules/07_require-comprehensive-feature-docs.md)
-- [.agents/rules/08_require-feature-plan-and-env-docs.md](../../.agents/rules/08_require-feature-plan-and-env-docs.md)
+- [.agents/rules/01_mask_sensitive-data.md](../../.agents/rules/01_mask_sensitive-data.md)
+- [.agents/rules/02_write-in-english.md](../../.agents/rules/02_write-in-english.md)
+- [.agents/rules/03_keep-readme-updated.md](../../.agents/rules/03_keep-readme-updated.md)
+- [.agents/rules/04_use-dedicated-branch-for-large-features.md](../../.agents/rules/04_use-dedicated-branch-for-large-features.md)
+- [.agents/rules/05_update-mermaid-on-architecture-changes.md](../../.agents/rules/05_update-mermaid-on-architecture-changes.md)
+- [.agents/rules/06_require-comprehensive-feature-docs.md](../../.agents/rules/06_require-comprehensive-feature-docs.md)
+- [.agents/rules/07_require-feature-plan-and-env-docs.md](../../.agents/rules/07_require-feature-plan-and-env-docs.md)
+- [.agents/rules/08_agents-override-prefer-reusable-modules.md](../../.agents/rules/08_agents-override-prefer-reusable-modules.md)

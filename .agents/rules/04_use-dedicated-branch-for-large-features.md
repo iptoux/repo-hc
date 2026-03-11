@@ -14,7 +14,7 @@ Do not implement large features directly on `main`.
 ## What Counts as a Large Feature
 Treat work as a large feature if one or more of the following is true:
 
-- It affects multiple apps or packages.
+- It affects multiple modules, docs sections, or workflows.
 - It introduces new architecture, major workflows, or cross-cutting behavior.
 - It requires multiple commits over more than one working session.
 - It has elevated risk, migration impact, or broad testing surface.

@@ -3,8 +3,8 @@
 ## Links
 - README: `../README.md`
 - Related Rule: `./03_keep-readme-updated.md`
-- Related Rule: `./05_use-dedicated-branch-for-large-features.md`
-- Related Rule: `./07_require-comprehensive-feature-docs.md`
+- Related Rule: `./04_use-dedicated-branch-for-large-features.md`
+- Related Rule: `./06_require-comprehensive-feature-docs.md`
 
 ## Scope
 This rule applies whenever architecture is added, changed, or removed.

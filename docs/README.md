@@ -1,75 +1,47 @@
-# Documentation
+﻿# Documentation
 
-Welcome to project documentation.
+Welcome to the repository documentation for `repo-hc`.
 
 ## Sections
 
-- [`admc/`](./admc/) admin control app setup and usage
-- [`admc-tauri/`](./admc-tauri/) desktop admin control app setup and usage
-- [`api/`](./api/) Hono backend app setup and usage
-- [`db/`](./db/) shared database package setup and usage
-- [`mermaid/`](./mermaid/README.md) visual architecture and workflow diagrams
-- [`project/`](./project/) global developer rules and standards
-- [`workflow/`](./workflow/) contributor workflow and docs system guidance
+- [housekeeping/](./housekeeping/README.md): package intent, usage model, and implementation guidance
+- [workflow/](./workflow/README.md): contribution workflow for branch-plan-doc sync
+- [project/](./project/README.md): global project rules and standards
+- [mermaid/](./mermaid/README.md): architecture and workflow diagrams
 
-## ADMC Docs
+## Housekeeping Docs
 
-- [ADMC Developer Guide](./admc/developers.md)
-- [ADMC User Guide](./admc/users.md)
-
-## ADMC Tauri Docs
-
-- [ADMC Tauri Developer Guide](./admc-tauri/developers.md)
-- [ADMC Tauri User Guide](./admc-tauri/users.md)
-
-## API Docs
-
-- [API Developer Guide](./api/developers.md)
-- [API User Guide](./api/users.md)
-
-## DB Docs
-
-- [DB Developer Guide](./db/developers.md)
-- [DB User Guide](./db/users.md)
-
-## Mermaid Docs
-
-- [Mermaid Docs Index](./mermaid/README.md)
-- [ADMC Architecture](./mermaid/admc-architecture.md)
-- [ADMC Tauri Architecture](./mermaid/admc-tauri-architecture.md)
-- [API Architecture](./mermaid/api-architecture.md)
-- [System Architecture](./mermaid/system-architecture.md)
-- [DB Architecture](./mermaid/db-architecture.md)
-- [DB Workflows](./mermaid/db-workflows.md)
-- [Workflow Docs System](./mermaid/workflow-docs-system.md)
-- [Workflow Community PR Lifecycle](./mermaid/workflow-community-pr-lifecycle.md)
-
-## Project Docs
-
-- [Project Developer Documentation](./project/README.md)
-- [Project Developer Rules](./project/rules.md)
+- [Housekeeping Overview](./housekeeping/README.md)
+- [Housekeeping Developer Guide](./housekeeping/developers.md)
+- [Housekeeping User Guide](./housekeeping/users.md)
 
 ## Workflow Docs
 
+- [Workflow Overview](./workflow/README.md)
 - [Workflow Developer Guide](./workflow/developers.md)
 - [Workflow User Guide](./workflow/users.md)
 
+## Project Docs
+
+- [Project Documentation](./project/README.md)
+- [Project Rules](./project/rules.md)
+
+## Mermaid Docs
+
+- [Mermaid Index](./mermaid/README.md)
+- [Housekeeping Package Architecture](./mermaid/housekeeping-architecture.md)
+- [Docs System and Sync Flow](./mermaid/workflow-docs-system.md)
+- [Community PR Lifecycle](./mermaid/workflow-community-pr-lifecycle.md)
+
 ## Suggested Reading Order
 
-1. [DB User Guide](./db/users.md)
-2. [API User Guide](./api/users.md)
-3. [API Developer Guide](./api/developers.md)
-4. [API Architecture](./mermaid/api-architecture.md)
-5. [ADMC User Guide](./admc/users.md)
-6. [ADMC Developer Guide](./admc/developers.md)
-7. [ADMC Architecture](./mermaid/admc-architecture.md)
-8. [ADMC Tauri User Guide](./admc-tauri/users.md)
-9. [ADMC Tauri Developer Guide](./admc-tauri/developers.md)
-10. [ADMC Tauri Architecture](./mermaid/admc-tauri-architecture.md)
-11. [DB Developer Guide](./db/developers.md)
-12. [DB Architecture](./mermaid/db-architecture.md)
-13. [DB Workflows](./mermaid/db-workflows.md)
-14. [Workflow User Guide](./workflow/users.md)
-15. [Workflow Developer Guide](./workflow/developers.md)
-16. [Workflow Docs System](./mermaid/workflow-docs-system.md)
-17. [Workflow Community PR Lifecycle](./mermaid/workflow-community-pr-lifecycle.md)
+1. [Housekeeping Overview](./housekeeping/README.md)
+2. [Housekeeping User Guide](./housekeeping/users.md)
+3. [Housekeeping Developer Guide](./housekeeping/developers.md)
+4. [Housekeeping Package Architecture](./mermaid/housekeeping-architecture.md)
+5. [Workflow Overview](./workflow/README.md)
+6. [Workflow Developer Guide](./workflow/developers.md)
+7. [Workflow User Guide](./workflow/users.md)
+8. [Docs System and Sync Flow](./mermaid/workflow-docs-system.md)
+9. [Community PR Lifecycle](./mermaid/workflow-community-pr-lifecycle.md)
+10. [Project Rules](./project/rules.md)

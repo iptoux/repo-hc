@@ -3,7 +3,7 @@
 ## Links
 - README: `../README.md`
 - Related Rule: `./03_keep-readme-updated.md`
-- Related Rule: `./06_update-mermaid-on-architecture-changes.md`
+- Related Rule: `./05_update-mermaid-on-architecture-changes.md`
 
 ## Scope
 This rule applies to every feature that changes one or more of the following:
@@ -12,7 +12,7 @@ This rule applies to every feature that changes one or more of the following:
 - setup or runtime configuration
 - developer workflow
 - user-facing behavior
-- shared package contracts or interfaces
+- shared contracts or interfaces
 
 ## Requirement
 For in-scope feature work, documentation is part of the implementation and must be added or updated in the same change.
@@ -33,18 +33,18 @@ Must cover:
 
 - architecture intent and boundaries
 - setup and environment requirements
-- command reference (build, test, migration, validation)
+- validation and test workflow
 - extension/change workflow
-- security and server/client boundary notes
+- security notes
 - troubleshooting for common failures
 
 ### User Documentation (`users.md`)
 Must cover:
 
 - quick start and primary usage flows
-- stable import/API surface
+- stable API/usage surface
 - safe integration examples
-- what to avoid / limitations
+- limitations and constraints
 - FAQ or operational notes where relevant
 
 ### Mermaid Documentation

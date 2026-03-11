@@ -1,11 +1,10 @@
-# Workflow Community PR Lifecycle (Mermaid)
+﻿# Workflow Community PR Lifecycle (Mermaid)
 
 Back to docs:
 
 - [Docs Home](../README.md)
 - [Workflow Documentation](../workflow/README.md)
-- [Workflow Developer Guide](../workflow/developers.md)
-- [Workflow User Guide](../workflow/users.md)
+- [Project Rules](../project/rules.md)
 
 ## Contribution Lifecycle
 
@@ -15,21 +14,20 @@ flowchart TD
   B --> C["Write Scoped Plan"]
   C --> D["Implement Focused Change"]
   D --> E["Update Docs + Mermaid"]
-  E --> F["Run Checks"]
+  E --> F["Validation"]
   F --> G["Open PR"]
-  G --> H["Maintainer Review"]
+  G --> H["Review"]
   H --> I["Merge"]
 ```
 
-## Why It Keeps PRs Clean
+## Quality Effects
 
 ```mermaid
 flowchart LR
-  SCOPE["Scoped Branch"] --> CLEAN["No unrelated changes"]
-  PLAN["Plan-first"] --> TRACE["Clear intent"]
-  DOCSYNC["Docs in same PR"] --> ALIGN["Behavior and docs aligned"]
-  ALIGN --> TRUST["Higher user trust"]
-  CLEAN --> REVIEW["Faster review"]
+  BRANCH["Scoped Branch"] --> CLEAN["Cleaner Diffs"]
+  PLAN["Plan-First"] --> TRACE["Clear Intent"]
+  DOCSYNC["Docs in Same PR"] --> ALIGN["Behavior/Docs Aligned"]
+  CLEAN --> REVIEW["Faster Review"]
   TRACE --> REVIEW
-  REVIEW --> QUALITY["Higher merge quality"]
+  ALIGN --> TRUST["Higher Maintainer Trust"]
 ```

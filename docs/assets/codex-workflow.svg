@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Codex workflow</title>
+  <desc id="desc">Simple flat workflow from AGENTS.md to .agents to docs and implementation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path class="arrow" d="M 0 0 L 10 5 L 0 10 z" />
+    </marker>
+  </defs>
+  <style>
+    .panel {
+      fill: rgba(255, 255, 255, 0.72);
+      stroke: #d0d7de;
+    }
+    .card {
+      fill: rgba(246, 248, 250, 0.8);
+      stroke: #d0d7de;
+    }
+    .title { fill: #24292f; }
+    .subtitle { fill: #57606a; }
+    .body { fill: #24292f; }
+    .arrow-line, .arrow { fill: #0969da; stroke: #0969da; }
+    .h1 { fill: #1a7f37; }
+    .h2 { fill: #0969da; }
+    .h3 { fill: #9a6700; }
+    .h4 { fill: #8250df; }
+
+    @media (prefers-color-scheme: dark) {
+      .panel {
+        fill: rgba(22, 27, 34, 0.8);
+        stroke: #30363d;
+      }
+      .card {
+        fill: rgba(13, 17, 23, 0.7);
+        stroke: #30363d;
+      }
+      .title { fill: #f0f6fc; }
+      .subtitle { fill: #8b949e; }
+      .body { fill: #c9d1d9; }
+      .arrow-line, .arrow { fill: #58a6ff; stroke: #58a6ff; }
+      .h1 { fill: #3fb950; }
+      .h2 { fill: #58a6ff; }
+      .h3 { fill: #d29922; }
+      .h4 { fill: #a371f7; }
+    }
+  </style>
+
+  <rect class="panel" x="20" y="20" width="1160" height="320" rx="12" />
+
+  <text class="title" x="60" y="66" font-size="30" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">msms AI Workflow</text>
+  <text class="subtitle" x="60" y="94" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Documentation-first, security-first, reusable-by-default.</text>
+
+  <rect class="card" x="60" y="140" width="240" height="130" rx="10" />
+  <text class="h1" x="82" y="178" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">1. AGENTS.md</text>
+  <text class="body" x="82" y="204" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Global baseline for</text>
+  <text class="body" x="82" y="224" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">security and architecture.</text>
+
+  <rect class="card" x="350" y="140" width="240" height="130" rx="10" />
+  <text class="h2" x="372" y="178" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">2. .agents/*</text>
+  <text class="body" x="372" y="204" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Rules, skills, prompts,</text>
+  <text class="body" x="372" y="224" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">plans, and learnings.</text>
+
+  <rect class="card" x="640" y="140" width="240" height="130" rx="10" />
+  <text class="h3" x="662" y="178" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">3. docs/*</text>
+  <text class="body" x="662" y="204" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Feature docs, user/dev</text>
+  <text class="body" x="662" y="224" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">guides, Mermaid diagrams.</text>
+
+  <rect class="card" x="930" y="140" width="210" height="130" rx="10" />
+  <text class="h4" x="952" y="178" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">4. Implement</text>
+  <text class="body" x="952" y="204" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Small modular changes,</text>
+  <text class="body" x="952" y="224" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">tests, docs sync.</text>
+
+  <line class="arrow-line" x1="300" y1="205" x2="350" y2="205" stroke-width="3" marker-end="url(#arrow)" />
+  <line class="arrow-line" x1="590" y1="205" x2="640" y2="205" stroke-width="3" marker-end="url(#arrow)" />
+  <line class="arrow-line" x1="880" y1="205" x2="930" y2="205" stroke-width="3" marker-end="url(#arrow)" />
+</svg>

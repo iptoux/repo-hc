@@ -1,9 +1,8 @@
 # Shared Drizzle Workspace Package: Implementation Learnings
 
 ## Links
-- README: `../README.md`
-- Prompt: `../prompts/02_shared-drizzle-workspace-package.md`
-- Plan: `../global-drizzle-package-plan.md`
+- README: `../../README.md`
+- Prompt: `../../prompts/examples/02_shared-drizzle-workspace-package.md`
 
 ## Context
 A new large feature introduced a shared Drizzle package under `packages/db` for reuse across apps.
@@ -21,8 +20,8 @@ A new large feature introduced a shared Drizzle package under `packages/db` for 
 ## Test And Validation Pattern
 - Add unit tests for adapter config validation, especially invalid input paths.
 - Run package-local checks first:
-  - `pnpm --filter @workspace/db typecheck`
-  - `pnpm --filter @workspace/db test`
+  - run package-local `typecheck`
+  - run package-local `test`
 - Then run workspace-wide checks.
 
 ## Documentation Pattern
