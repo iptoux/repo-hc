@@ -1,6 +1,6 @@
-﻿{
+{
   "name": "repo-hc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Bootstrap AI-agent housekeeping docs and rules into repository roots.",
   "license": "AGPL-3.0",
   "type": "commonjs",
@@ -37,4 +37,3 @@
     "bootstrap"
   ]
 }
-
