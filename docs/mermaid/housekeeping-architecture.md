@@ -33,3 +33,16 @@ flowchart TD
 
   PERM -->|deny| BLOCK["Blocked Operation"]
 ```
+
+## Install Bootstrap Flow
+
+```mermaid
+flowchart LR
+  ADD["pnpm add repo-hc"] --> POSTINSTALL["postinstall: repo-hc install"]
+  POSTINSTALL --> COPY["Bootstrap Copy"]
+  COPY --> AGENTS[".agents/"]
+  COPY --> DOCS["docs/"]
+  COPY --> AGENTSFILE["AGENTS.md (canonical)"]
+  COPY --> AGENT["AGENT.md (alias)"]
+  COPY --> SAFE["Non-destructive by default"]
+```

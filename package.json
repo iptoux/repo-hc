@@ -1,0 +1,40 @@
+﻿{
+  "name": "repo-hc",
+  "version": "0.1.0",
+  "description": "Bootstrap AI-agent housekeeping docs and rules into repository roots.",
+  "license": "AGPL-3.0",
+  "type": "commonjs",
+  "bin": {
+    "repo-hc": "bin/repo-hc.cjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "docs/",
+    ".agents/",
+    "AGENTS.md",
+    "README.md",
+    "LICENSE.txt",
+    "SECURITY.md",
+    "CONTRIBUTING.md"
+  ],
+  "scripts": {
+    "postinstall": "node ./bin/repo-hc.cjs install",
+    "test": "node --test ./test/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iptoux/repo-hc.git"
+  },
+  "keywords": [
+    "ai-agent",
+    "housekeeping",
+    "github",
+    "documentation",
+    "bootstrap"
+  ]
+}
+

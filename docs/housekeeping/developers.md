@@ -26,6 +26,24 @@ Current status: architecture and documentation baseline, package runtime not pub
 - `types/`: shared public and internal contracts
 - `config/`: environment parsing and defaults
 
+## Package Bootstrap Runtime
+
+`repo-hc` ships with a CLI and an install hook:
+
+- `bin/repo-hc.cjs`: CLI entrypoint (`init`, `install`)
+- `lib/bootstrap.cjs`: non-destructive copy logic
+- `package.json` `postinstall`: runs `repo-hc install`
+
+Default install behavior copies these package assets to consumer root:
+
+- `.agents/`
+- `docs/`
+- `AGENTS.md`
+- `AGENT.md` (generated as compatibility alias from `AGENTS.md`)
+
+`install` is intentionally non-destructive and does not overwrite existing files.
+Use `repo-hc init --force` for explicit overwrite.
+
 ## Security Requirements
 
 - Never embed real tokens, secrets, or private repository data in source or docs.
@@ -59,6 +77,7 @@ At minimum, validate:
 - architecture docs reflect current structure
 - security guidance is still enforced
 - rule references in `.agents` remain accurate
+- bootstrap tests pass (`node --test ./test/*.test.cjs`)
 
 ## Related
 

@@ -22,6 +22,7 @@
 - [Vision](#vision)
 - [AI Agent Workflow System](#ai-agent-workflow-system)
 - [Planned Installation (When Published)](#planned-installation-when-published)
+- [Bootstrap Behavior](#bootstrap-behavior)
 - [What The Package Will Cover](#what-the-package-will-cover)
 - [Documentation System](#documentation-system)
 - [Repository Layout](#repository-layout)
@@ -56,7 +57,7 @@ AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md) and th
 ## Planned Installation (When Published)
 
 ```bash
-<package-manager> add -D repo-hc
+pnpm add repo-hc
 ```
 
 The package name is `repo-hc`. Until publish time, this repository is the source of truth for the workflow model and documentation.
@@ -64,6 +65,27 @@ The package name is `repo-hc`. Until publish time, this repository is the source
 > [!TIP]
 > Start every AI-assisted task with [AGENTS.md](./AGENTS.md), then continue with [`.agents/README.md`](./.agents/README.md), then [docs/README.md](./docs/README.md).
 > The effective behavior rules are user-defined in [`/.agents/rules`](./.agents/rules/).
+
+## Bootstrap Behavior
+
+After `pnpm add repo-hc`, the package `postinstall` bootstraps these assets into the consumer project root:
+
+- `.agents/`
+- `docs/`
+- `AGENTS.md` (canonical)
+- `AGENT.md` (compatibility alias generated from `AGENTS.md`)
+
+Existing files are preserved by default (non-destructive copy). To re-run manually:
+
+```bash
+pnpm exec repo-hc init
+```
+
+To overwrite existing files intentionally:
+
+```bash
+pnpm exec repo-hc init --force
+```
 
 ## What The Package Will Cover
 

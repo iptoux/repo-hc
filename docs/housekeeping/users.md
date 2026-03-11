@@ -21,10 +21,21 @@ Primary target: OpenAI Codex workflows.
 After publication, usage is expected to look like:
 
 ```bash
-<package-manager> add -D <package-name>
+pnpm add repo-hc
 ```
 
-The package name is not finalized yet.
+During installation, `repo-hc` bootstraps the following assets into the project root:
+
+- `.agents/`
+- `docs/`
+- `AGENTS.md` (canonical)
+- `AGENT.md` (compatibility alias)
+
+Manual re-run:
+
+```bash
+pnpm exec repo-hc init
+```
 
 ## Typical Workflow
 

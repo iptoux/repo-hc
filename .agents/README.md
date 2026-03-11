@@ -31,16 +31,19 @@ This folder stores reusable agent knowledge for consistent, safe, and fast colla
 ### Plans
 
 - [2026-03-11-github-housekeeping-doc-refresh.md](./plans/2026-03-11-github-housekeeping-doc-refresh.md)
+- [2026-03-11-publishable-repo-hc-package-bootstrap.md](./plans/2026-03-11-publishable-repo-hc-package-bootstrap.md)
 - [examples/2026-03-11-add-docs-workflow-guides.md](./plans/examples/2026-03-11-add-docs-workflow-guides.md)
 - [examples/2026-03-11-central-api-docs-mermaid.md](./plans/examples/2026-03-11-central-api-docs-mermaid.md)
 
 ### Learnings
 
+- [03_repo-hc-install-bootstrap.md](./learnings/03_repo-hc-install-bootstrap.md)
 - [examples/01_workspace-peer-dependency-resolution.md](./learnings/examples/01_workspace-peer-dependency-resolution.md)
 - [examples/02_shared-drizzle-workspace-package.md](./learnings/examples/02_shared-drizzle-workspace-package.md)
 
 ### Prompts
 
+- [03_repo-hc-install-bootstrap.md](./prompts/03_repo-hc-install-bootstrap.md)
 - [examples/01_workspace-peer-dependency-resolution.md](./prompts/examples/01_workspace-peer-dependency-resolution.md)
 - [examples/02_shared-drizzle-workspace-package.md](./prompts/examples/02_shared-drizzle-workspace-package.md)
 
