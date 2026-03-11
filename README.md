@@ -1,27 +1,30 @@
 ﻿# repo-hc
 
 <p align="center">
-  <a href="./README.md"><img src="https://img.shields.io/badge/Status-Planning-2563EB?style=for-the-badge" alt="Status: Planning" /></a>
-  <a href="./README.md"><img src="https://img.shields.io/badge/npm-package%20(target)-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm package target" /></a>
+  <a href="./README.md"><img src="https://img.shields.io/badge/Status-Published-16A34A?style=for-the-badge" alt="Status: Published" /></a>
+  <a href="https://www.npmjs.com/package/repo-hc"><img src="https://img.shields.io/badge/npm-repo--hc-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm package: repo-hc" /></a>
+  <a href="https://www.npmjs.com/package/repo-hc"><img src="https://img.shields.io/npm/v/repo-hc?style=for-the-badge&logo=npm&logoColor=white" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/repo-hc"><img src="https://img.shields.io/npm/dm/repo-hc?style=for-the-badge&logo=npm&logoColor=white" alt="npm downloads" /></a>
+  <a href="https://github.com/iptoux/repo-hc/stargazers"><img src="https://img.shields.io/github/stars/iptoux/repo-hc?style=for-the-badge&logo=github&logoColor=white" alt="GitHub stars" /></a>
   <a href="https://openai.com/"><img src="https://img.shields.io/badge/AI-OpenAI%20Codex-111827?style=for-the-badge&logo=openai&logoColor=white" alt="AI: OpenAI Codex" /></a>
-  <a href="./docs/README.md"><img src="https://img.shields.io/badge/Docs-Structured-0EA5E9?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Documentation: structured" /></a>
+  <a href="./docs/README.md"><img src="https://img.shields.io/badge/Docs-Self_Structured-0EA5E9?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Documentation: Self structured" /></a>
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Policy-DC2626?style=for-the-badge&logo=shield&logoColor=white" alt="Security policy" /></a>
   <a href="./LICENSE.txt"><img src="https://img.shields.io/badge/License-AGPL--3.0-6B7280?style=for-the-badge" alt="License: AGPL-3.0" /></a>
 </p>
 
 <h3 align="center">
-  <code>repo-hc</code> is a future developer npm package for automated GitHub housekeeping.<br/>
+  <code>repo-hc</code> is a developer npm package for automated GitHub housekeeping.<br/>
   It provides AI-agent guidance and workflow contracts to keep repositories clean, secure, and well documented.
 </h3>
 
 > [!IMPORTANT]
-> The npm package is not published yet. This repository currently focuses on architecture, rules, and documentation.
+> `repo-hc` is published on npm. This repository remains the source of truth for architecture, rules, and documentation.
 
 ## Table of Contents
 
 - [Vision](#vision)
 - [AI Agent Workflow System](#ai-agent-workflow-system)
-- [Planned Installation (When Published)](#planned-installation-when-published)
+- [Installation](#installation)
 - [Bootstrap Behavior](#bootstrap-behavior)
 - [What The Package Will Cover](#what-the-package-will-cover)
 - [Documentation System](#documentation-system)
@@ -54,13 +57,16 @@ AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md) and th
 - [`.agents/prompts/`](./.agents/prompts/): sanitized source prompts for traceability
 - [`.agents/plans/`](./.agents/plans/): scoped feature implementation plans
 
-## Planned Installation (When Published)
+## Installation
 
 ```bash
+npm view repo-hc version
 pnpm add repo-hc
 ```
 
-The package name is `repo-hc`. Until publish time, this repository is the source of truth for the workflow model and documentation.
+Install directly from npm:
+
+- package name: `repo-hc`
 
 > [!TIP]
 > Start every AI-assisted task with [AGENTS.md](./AGENTS.md), then continue with [`.agents/README.md`](./.agents/README.md), then [docs/README.md](./docs/README.md).
