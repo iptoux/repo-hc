@@ -27,6 +27,20 @@
 - synchronized documentation
 - explicit auditability of AI-assisted work
 
+## AI Agent Workflow System
+
+AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md) and the local [`.agents/`](./.agents/README.md) knowledge base:
+
+![repo-hc AI Workflow](./docs/assets/codex-workflow.svg)
+
+- [AGENTS.md](./AGENTS.md): baseline collaboration, architecture, security, and documentation rules
+- [`.agents/rules/`](./.agents/rules/): user-defined operational rules
+- [`.agents/skills/`](./.agents/skills/): reusable `SKILL.md` playbooks
+- [`.agents/learnings/`](./.agents/learnings/): implementation learnings and decisions
+- [`.agents/prompts/`](./.agents/prompts/): sanitized source prompts for traceability
+- [`.agents/plans/`](./.agents/plans/): scoped feature implementation plans
+
+
 Initial optimization target: **OpenAI Codex**.
 
 ## Planned Installation (When Published)
@@ -58,19 +72,6 @@ Project documentation is centralized in [`docs/`](./docs/) and organized by feat
 - [`docs/workflow/`](./docs/workflow/): contributor workflow guides
 - [`docs/housekeeping/`](./docs/housekeeping/): package-specific developer and user docs
 - [`docs/mermaid/`](./docs/mermaid/): architecture and workflow diagrams
-
-## AI Agent Workflow System
-
-AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md) and the local [`.agents/`](./.agents/README.md) knowledge base:
-
-![repo-hc AI Workflow](./docs/assets/codex-workflow.svg)
-
-- [AGENTS.md](./AGENTS.md): baseline collaboration, architecture, security, and documentation rules
-- [`.agents/rules/`](./.agents/rules/): user-defined operational rules
-- [`.agents/skills/`](./.agents/skills/): reusable `SKILL.md` playbooks
-- [`.agents/learnings/`](./.agents/learnings/): implementation learnings and decisions
-- [`.agents/prompts/`](./.agents/prompts/): sanitized source prompts for traceability
-- [`.agents/plans/`](./.agents/plans/): scoped feature implementation plans
 
 ## Repository Layout
 
