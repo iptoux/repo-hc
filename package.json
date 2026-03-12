@@ -19,7 +19,6 @@
     "CONTRIBUTING.md"
   ],
   "scripts": {
-    "postinstall": "node ./bin/repo-hc.cjs install",
     "test": "node --test ./test/*.test.cjs"
   },
   "engines": {

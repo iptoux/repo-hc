@@ -38,9 +38,9 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  ADD["pnpm add repo-hc"] --> POSTINSTALL["postinstall: repo-hc install"]
-  POSTINSTALL --> COPY["Bootstrap Copy"]
-  POSTINSTALL --> PROMPT["Prompt: Hide agent files in VS Code?"]
+  ADD["pnpm add repo-hc"] --> INIT["pnpm exec repo-hc init"]
+  INIT --> COPY["Bootstrap Copy"]
+  INIT --> PROMPT["Prompt: Hide agent files in VS Code?"]
   COPY --> AGENTS[".agents/"]
   COPY --> EXAMPLES["Only examples in rules/learnings/plans/prompts"]
   COPY --> DOCS["docs/"]

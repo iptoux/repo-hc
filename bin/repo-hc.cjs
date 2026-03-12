@@ -9,11 +9,9 @@ function printHelp() {
   console.log("");
   console.log("Usage:");
   console.log("  repo-hc init [--force] [--target <path>]");
-  console.log("  repo-hc install");
   console.log("");
   console.log("Commands:");
   console.log("  init     Copy .agents, docs, and AGENTS.md into a project root.");
-  console.log("  install  Internal command used by postinstall.");
   console.log("");
   console.log("Flags:");
   console.log("  --force        Overwrite existing files.");
@@ -54,29 +52,13 @@ function runBootstrap({ targetRoot, force, silent }) {
   return summary;
 }
 
-function runInitCommand(args) {
+async function runInitCommand(args) {
   const force = args.includes("--force");
   const targetOption = parseOptionValue(args, "--target");
   const targetRoot = targetOption ? path.resolve(targetOption) : process.cwd();
   runBootstrap({ targetRoot, force, silent: false });
-}
-
-async function runInstallCommand() {
-  if (process.env.REPO_HC_SKIP_POSTINSTALL === "1") {
-    return;
-  }
-
-  if (process.env.npm_config_global === "true") {
-    return;
-  }
-
-  const targetRoot = process.env.INIT_CWD
-    ? path.resolve(process.env.INIT_CWD)
-    : process.cwd();
 
   try {
-    runBootstrap({ targetRoot, force: false, silent: true });
-
     const vscodeResult = await maybeConfigureAgentFilesExclude({ targetRoot });
     if (vscodeResult.status === "updated") {
       console.log(
@@ -84,9 +66,8 @@ async function runInstallCommand() {
       );
     }
   } catch (error) {
-    // Never break installation if bootstrap fails during postinstall.
     const message = error && error.message ? error.message : String(error);
-    console.warn(`[repo-hc] postinstall bootstrap skipped: ${message}`);
+    console.warn(`[repo-hc] VS Code settings update skipped: ${message}`);
   }
 }
 
@@ -99,12 +80,7 @@ async function main() {
   }
 
   if (command === "init") {
-    runInitCommand(args);
-    return;
-  }
-
-  if (command === "install") {
-    await runInstallCommand();
+    await runInitCommand(args);
     return;
   }
 
