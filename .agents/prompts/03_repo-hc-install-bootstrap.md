@@ -11,7 +11,6 @@ What is required so users can run "pnpm add repo-hc" and automatically receive:
 - .agents
 - docs
 - AGENTS.md (canonical)
-- AGENT.md (compatibility alias)
 
 Implement it without using -D.
 ```

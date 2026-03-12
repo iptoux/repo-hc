@@ -40,9 +40,13 @@ flowchart TD
 flowchart LR
   ADD["pnpm add repo-hc"] --> POSTINSTALL["postinstall: repo-hc install"]
   POSTINSTALL --> COPY["Bootstrap Copy"]
+  POSTINSTALL --> PROMPT["Prompt: Hide agent files in VS Code?"]
   COPY --> AGENTS[".agents/"]
+  COPY --> EXAMPLES["Only examples in rules/learnings/plans/prompts"]
   COPY --> DOCS["docs/"]
   COPY --> AGENTSFILE["AGENTS.md (canonical)"]
-  COPY --> AGENT["AGENT.md (alias)"]
   COPY --> SAFE["Non-destructive by default"]
+  PROMPT -->|yes| VSCODE[".vscode/settings.json merge"]
+  PROMPT -->|no/non-interactive| SKIP["No VS Code changes"]
 ```
+

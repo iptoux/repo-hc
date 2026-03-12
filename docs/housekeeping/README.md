@@ -9,7 +9,8 @@ pnpm add repo-hc
 ```
 
 This bootstraps `.agents/`, `docs/`, and `AGENTS.md` into the project root.
-`AGENT.md` is generated as a compatibility alias from `AGENTS.md`.
+In interactive installs, users are prompted to optionally add VS Code `files.exclude` entries for common agent files.
+For `.agents/rules`, `.agents/learnings`, `.agents/plans`, and `.agents/prompts`, bootstrap transfers only each folder's `examples/` content.
 
 ## Documents
 
@@ -26,3 +27,4 @@ This bootstraps `.agents/`, `docs/`, and `AGENTS.md` into the project root.
 - [Docs Home](../README.md)
 - [Workflow Overview](../workflow/README.md)
 - [AGENTS.md](../../AGENTS.md)
+

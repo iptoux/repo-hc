@@ -80,6 +80,21 @@ After `pnpm add repo-hc`, the package `postinstall` bootstraps these assets into
 - `docs/`
 - `AGENTS.md` (canonical)
 
+For `.agents/`, repository-internal non-example files are excluded from transfer in:
+
+- `.agents/rules/`
+- `.agents/learnings/`
+- `.agents/plans/`
+- `.agents/prompts/`
+
+Only each folder's `examples/` content is copied for those areas.
+
+When installation runs interactively, `repo-hc` also asks whether common agent files should be hidden in VS Code Explorer.  
+If confirmed, it creates or updates `.vscode/settings.json` with `files.exclude` entries for:
+
+- `.agents`
+- `AGENTS.md`
+
 Existing files are preserved by default (non-destructive copy). To re-run manually:
 
 ```bash
@@ -131,3 +146,4 @@ Short version:
 ## License
 
 Licensed under AGPL-3.0. See [LICENSE.txt](./LICENSE.txt).
+

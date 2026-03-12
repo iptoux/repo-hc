@@ -8,7 +8,6 @@ Enable consumers to run `pnpm add repo-hc` (without `-D`) and receive the follow
 - `.agents/`
 - `docs/`
 - `AGENTS.md` (canonical)
-- `AGENT.md` (compatibility alias)
 
 ## Scope
 1. Add a publishable npm package scaffold (`package.json`, CLI entrypoint, install hook).

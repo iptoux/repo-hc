@@ -29,7 +29,10 @@ During installation, `repo-hc` bootstraps the following assets into the project 
 - `.agents/`
 - `docs/`
 - `AGENTS.md` (canonical)
-- `AGENT.md` (compatibility alias)
+
+If installation runs in an interactive terminal, `repo-hc` asks whether these common agent files and directories should be hidden in VS Code Explorer.  
+If accepted, `.vscode/settings.json` is created or merged with `files.exclude` entries for `.agents` and `AGENTS.md`.
+For `.agents/rules`, `.agents/learnings`, `.agents/plans`, and `.agents/prompts`, only `examples/` content is transferred to your project.
 
 Manual re-run:
 
@@ -56,4 +59,5 @@ pnpm exec repo-hc init
 - [Housekeeping Overview](./README.md)
 - [Housekeeping Developer Guide](./developers.md)
 - [Workflow User Guide](../workflow/users.md)
+
 

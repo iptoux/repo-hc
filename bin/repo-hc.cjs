@@ -2,6 +2,7 @@
 
 const path = require("node:path");
 const { bootstrapProjectRoot, BOOTSTRAP_ITEMS } = require("../lib/bootstrap.cjs");
+const { maybeConfigureAgentFilesExclude } = require("../lib/vscode-settings.cjs");
 
 function printHelp() {
   console.log("repo-hc");
@@ -11,7 +12,7 @@ function printHelp() {
   console.log("  repo-hc install");
   console.log("");
   console.log("Commands:");
-  console.log("  init     Copy .agents, docs, AGENTS.md and compatibility AGENT.md into a project root.");
+  console.log("  init     Copy .agents, docs, and AGENTS.md into a project root.");
   console.log("  install  Internal command used by postinstall.");
   console.log("");
   console.log("Flags:");
@@ -42,7 +43,7 @@ function runBootstrap({ targetRoot, force, silent }) {
 
   console.log("[repo-hc] Bootstrap completed.");
   console.log(`[repo-hc] Target: ${path.resolve(targetRoot)}`);
-  console.log(`[repo-hc] Items: ${BOOTSTRAP_ITEMS.join(", ")} + AGENT.md compatibility alias`);
+  console.log(`[repo-hc] Items: ${BOOTSTRAP_ITEMS.join(", ")}`);
   console.log(`[repo-hc] Copied files: ${summary.copiedFiles}`);
   console.log(`[repo-hc] Skipped existing files: ${summary.skippedFiles}`);
   console.log(`[repo-hc] Created directories: ${summary.createdDirectories}`);
@@ -60,7 +61,7 @@ function runInitCommand(args) {
   runBootstrap({ targetRoot, force, silent: false });
 }
 
-function runInstallCommand() {
+async function runInstallCommand() {
   if (process.env.REPO_HC_SKIP_POSTINSTALL === "1") {
     return;
   }
@@ -75,6 +76,13 @@ function runInstallCommand() {
 
   try {
     runBootstrap({ targetRoot, force: false, silent: true });
+
+    const vscodeResult = await maybeConfigureAgentFilesExclude({ targetRoot });
+    if (vscodeResult.status === "updated") {
+      console.log(
+        `[repo-hc] Updated ${path.relative(targetRoot, vscodeResult.settingsPath)} with files.exclude entries: ${vscodeResult.addedPatterns.join(", ")}`,
+      );
+    }
   } catch (error) {
     // Never break installation if bootstrap fails during postinstall.
     const message = error && error.message ? error.message : String(error);
@@ -82,7 +90,7 @@ function runInstallCommand() {
   }
 }
 
-function main() {
+async function main() {
   const [, , command, ...args] = process.argv;
 
   if (!command || command === "--help" || command === "-h") {
@@ -96,7 +104,7 @@ function main() {
   }
 
   if (command === "install") {
-    runInstallCommand();
+    await runInstallCommand();
     return;
   }
 
@@ -105,4 +113,8 @@ function main() {
   process.exitCode = 1;
 }
 
-main();
+main().catch((error) => {
+  const message = error && error.message ? error.message : String(error);
+  console.error(`[repo-hc] Fatal error: ${message}`);
+  process.exitCode = 1;
+});

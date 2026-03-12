@@ -17,7 +17,6 @@ while ensuring these assets appear in consumer project roots:
 - `.agents/`
 - `docs/`
 - `AGENTS.md` (canonical)
-- `AGENT.md` (compatibility alias)
 
 ## Decision
 - Use `postinstall` to run an internal bootstrap command (`repo-hc install`).
