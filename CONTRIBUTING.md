@@ -18,7 +18,7 @@ Thanks for contributing.
 ## Contribution Workflow
 
 1. Create a dedicated branch from `main` (for example `feat/<topic>`).
-2. Create a scoped implementation plan before coding (prefer `.agents/plans/`).
+2. Implement your intended change or extension directly, preferably as reusable `.agents` updates (for example new rules, learnings, prompts, skills, or examples).
 3. Make focused, minimal changes.
 4. Keep docs synchronized in the same change.
 5. Update Mermaid diagrams when architecture/workflow changes.
@@ -30,6 +30,7 @@ If AI tooling is used for planning, implementation, review, or docs:
 
 - `AGENTS.md` is mandatory baseline guidance.
 - linked `.agents` rules and references must be followed.
+- Contributions can include support files for additional AI agents (for example Claude, Kiro, Kilo) when they improve project maintainability and reuse.
 
 ## Documentation Requirements
 
@@ -37,6 +38,7 @@ If AI tooling is used for planning, implementation, review, or docs:
 - Keep all docs in English unless explicitly requested otherwise.
 - Mask sensitive values in all docs and examples.
 - Keep `docs/README.md` links current.
+- Useful contributions include adding or improving `.agents` examples and project rules when they provide clear long-term value.
 
 ## Environment Variables (When Introduced)
 
