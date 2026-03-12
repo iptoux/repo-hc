@@ -49,6 +49,7 @@ Initial optimization target: **OpenAI Codex**.
 AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md) and the local [`.agents/`](./.agents/README.md) knowledge base:
 
 ![repo-hc AI Workflow](./docs/assets/codex-workflow.svg)
+![repo-hc Agent Execution Flow](./docs/assets/agent-flow.svg)
 
 - [AGENTS.md](./AGENTS.md): baseline collaboration, architecture, security, and documentation rules
 - [`.agents/rules/`](./.agents/rules/): user-defined operational rules
