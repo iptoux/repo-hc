@@ -6,10 +6,11 @@ Core install behavior:
 
 ```bash
 pnpm add repo-hc
+pnpm exec repo-hc init
 ```
 
-This bootstraps `.agents/`, `docs/`, and `AGENTS.md` into the project root.
-In interactive installs, users are prompted to optionally add VS Code `files.exclude` entries for common agent files.
+`repo-hc init` bootstraps `.agents/`, `docs/`, and `AGENTS.md` into the project root.
+When `repo-hc init` runs interactively, users are prompted to optionally add VS Code `files.exclude` entries for common agent files.
 For `.agents/rules`, `.agents/learnings`, `.agents/plans`, and `.agents/prompts`, bootstrap transfers only each folder's `examples/` content.
 
 ## Documents

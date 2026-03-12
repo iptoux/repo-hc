@@ -26,11 +26,18 @@ pnpm add repo-hc
 
 During installation, `repo-hc` bootstraps the following assets into the project root:
 
+```bash
+pnpm add repo-hc
+pnpm exec repo-hc init
+```
+
+After running `repo-hc init`, these assets are bootstrapped into the project root:
+
 - `.agents/`
 - `docs/`
 - `AGENTS.md` (canonical)
 
-If installation runs in an interactive terminal, `repo-hc` asks whether these common agent files and directories should be hidden in VS Code Explorer.  
+If `repo-hc init` runs in an interactive terminal, it asks whether these common agent files and directories should be hidden in VS Code Explorer.  
 If accepted, `.vscode/settings.json` is created or merged with `files.exclude` entries for `.agents` and `AGENTS.md`.
 For `.agents/rules`, `.agents/learnings`, `.agents/plans`, and `.agents/prompts`, only `examples/` content is transferred to your project.
 

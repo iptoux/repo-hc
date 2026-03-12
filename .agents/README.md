@@ -35,6 +35,7 @@ This folder stores reusable agent knowledge for consistent, safe, and fast colla
 - [2026-03-12-remove-legacy-alias-references.md](./plans/2026-03-12-remove-legacy-alias-references.md)
 - [2026-03-12-postinstall-vscode-hide-agent-files.md](./plans/2026-03-12-postinstall-vscode-hide-agent-files.md)
 - [2026-03-12-bootstrap-transfer-examples-only.md](./plans/2026-03-12-bootstrap-transfer-examples-only.md)
+- [2026-03-12-switch-to-init-first-bootstrap.md](./plans/2026-03-12-switch-to-init-first-bootstrap.md)
 - [examples/2026-03-11-add-docs-workflow-guides.md](./plans/examples/2026-03-11-add-docs-workflow-guides.md)
 - [examples/2026-03-11-central-api-docs-mermaid.md](./plans/examples/2026-03-11-central-api-docs-mermaid.md)
 
@@ -43,6 +44,7 @@ This folder stores reusable agent knowledge for consistent, safe, and fast colla
 - [03_repo-hc-install-bootstrap.md](./learnings/03_repo-hc-install-bootstrap.md)
 - [04_postinstall-vscode-hide-agent-files.md](./learnings/04_postinstall-vscode-hide-agent-files.md)
 - [05_bootstrap-transfer-examples-only.md](./learnings/05_bootstrap-transfer-examples-only.md)
+- [06_init-first-bootstrap-flow.md](./learnings/06_init-first-bootstrap-flow.md)
 - [examples/01_workspace-peer-dependency-resolution.md](./learnings/examples/01_workspace-peer-dependency-resolution.md)
 - [examples/02_shared-drizzle-workspace-package.md](./learnings/examples/02_shared-drizzle-workspace-package.md)
 
@@ -51,6 +53,7 @@ This folder stores reusable agent knowledge for consistent, safe, and fast colla
 - [03_repo-hc-install-bootstrap.md](./prompts/03_repo-hc-install-bootstrap.md)
 - [04_postinstall-vscode-hide-agent-files.md](./prompts/04_postinstall-vscode-hide-agent-files.md)
 - [05_bootstrap-transfer-examples-only.md](./prompts/05_bootstrap-transfer-examples-only.md)
+- [06_init-first-bootstrap-flow.md](./prompts/06_init-first-bootstrap-flow.md)
 - [examples/01_workspace-peer-dependency-resolution.md](./prompts/examples/01_workspace-peer-dependency-resolution.md)
 - [examples/02_shared-drizzle-workspace-package.md](./prompts/examples/02_shared-drizzle-workspace-package.md)
 

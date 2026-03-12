@@ -62,6 +62,7 @@ AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md) and th
 ```bash
 npm view repo-hc version
 pnpm add repo-hc
+pnpm exec repo-hc init
 ```
 
 Install directly from npm:
@@ -74,7 +75,7 @@ Install directly from npm:
 
 ## Bootstrap Behavior
 
-After `pnpm add repo-hc`, the package `postinstall` bootstraps these assets into the consumer project root:
+Run `repo-hc init` after installation to bootstrap these assets into the consumer project root:
 
 - `.agents/`
 - `docs/`
@@ -89,13 +90,13 @@ For `.agents/`, repository-internal non-example files are excluded from transfer
 
 Only each folder's `examples/` content is copied for those areas.
 
-When installation runs interactively, `repo-hc` also asks whether common agent files should be hidden in VS Code Explorer.  
+When `repo-hc init` runs interactively, it also asks whether common agent files should be hidden in VS Code Explorer.  
 If confirmed, it creates or updates `.vscode/settings.json` with `files.exclude` entries for:
 
 - `.agents`
 - `AGENTS.md`
 
-Existing files are preserved by default (non-destructive copy). To re-run manually:
+Existing files are preserved by default (non-destructive copy). To run or re-run:
 
 ```bash
 pnpm exec repo-hc init
