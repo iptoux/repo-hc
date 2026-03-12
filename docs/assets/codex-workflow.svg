@@ -50,9 +50,12 @@
   <text class="subtitle" x="60" y="94" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Documentation-first, security-first, reusable-by-default.</text>
 
   <rect class="card" x="60" y="140" width="240" height="130" rx="10" />
-  <text class="h1" x="82" y="178" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">1. AGENTS.md / CLAUDE.md</text>
-  <text class="body" x="82" y="204" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Global baseline for</text>
-  <text class="body" x="82" y="224" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">security and architecture.</text>
+  <text class="h1" x="82" y="170" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">
+    <tspan x="82" dy="0">1. AGENTS.md /</tspan>
+    <tspan x="82" dy="20">CLAUDE.md</tspan>
+  </text>
+  <text class="body" x="82" y="214" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Global baseline for</text>
+  <text class="body" x="82" y="234" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">security and architecture.</text>
 
   <rect class="card" x="350" y="140" width="240" height="130" rx="10" />
   <text class="h2" x="372" y="178" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">2. .agents/*</text>
