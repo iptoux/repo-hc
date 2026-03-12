@@ -142,7 +142,7 @@ Please follow the process in [CONTRIBUTING.md](./CONTRIBUTING.md).
 Short version:
 
 1. Create a dedicated feature branch.
-2. Create a scoped plan in `.agents/plans/` before implementation.
+2. Implement your intended change or extension directly, preferably as reusable `.agents` updates (including rules, examples, prompts, learnings, or skills for agents like Claude, Kiro, Kilo, etc.).
 3. Keep documentation in sync with every behavior or workflow change.
 
 ## License
