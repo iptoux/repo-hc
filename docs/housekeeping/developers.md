@@ -8,6 +8,11 @@ This guide explains how to implement and evolve `repo-hc` as a secure, modular n
 
 Current status: architecture and documentation baseline, package runtime not published yet.
 
+Supported AI baselines for this repository:
+
+- [AGENTS.md](../../AGENTS.md) for Codex-oriented workflows
+- [CLAUDE.md](../../CLAUDE.md) for Anthropic Claude CLI workflows
+
 ## Target Responsibilities
 
 - define machine-readable repository housekeeping rules

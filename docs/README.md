@@ -2,6 +2,11 @@
 
 Welcome to the repository documentation for `repo-hc`.
 
+Agent baselines:
+
+- [AGENTS.md](../AGENTS.md) for Codex-oriented workflows
+- [CLAUDE.md](../CLAUDE.md) for Anthropic Claude CLI workflows
+
 ## Sections
 
 - [housekeeping/](./housekeeping/README.md): package intent, usage model, and implementation guidance

@@ -35,7 +35,7 @@ flowchart LR
 
 - keep behavior and docs in one PR
 - keep links valid
-- keep terminology consistent across `AGENTS.md`, `.agents`, and `docs/`
+- keep terminology consistent across `AGENTS.md`, `CLAUDE.md`, `.agents`, and `docs/`
 - avoid stale architecture diagrams
 
 ## Developer Checklist

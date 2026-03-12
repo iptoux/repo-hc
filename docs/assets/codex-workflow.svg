@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">Codex workflow</title>
-  <desc id="desc">Simple flat workflow from AGENTS.md to .agents to docs and implementation.</desc>
+  <title id="title">AI baseline workflow</title>
+  <desc id="desc">Simple flat workflow from AGENTS.md or CLAUDE.md to .agents to docs and implementation.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
       <path class="arrow" d="M 0 0 L 10 5 L 0 10 z" />
@@ -50,7 +50,7 @@
   <text class="subtitle" x="60" y="94" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Documentation-first, security-first, reusable-by-default.</text>
 
   <rect class="card" x="60" y="140" width="240" height="130" rx="10" />
-  <text class="h1" x="82" y="178" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">1. AGENTS.md</text>
+  <text class="h1" x="82" y="178" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-weight="700">1. AGENTS.md / CLAUDE.md</text>
   <text class="body" x="82" y="204" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">Global baseline for</text>
   <text class="body" x="82" y="224" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">security and architecture.</text>
 

@@ -12,7 +12,9 @@ These rules apply to all contributors and all AI-assisted changes in this reposi
 
 If AI is used for planning, implementation, review, or docs:
 
-- follow [AGENTS.md](../../AGENTS.md)
+- follow the matching baseline file:
+  - [AGENTS.md](../../AGENTS.md) for Codex-oriented workflows
+  - [CLAUDE.md](../../CLAUDE.md) for Anthropic Claude CLI workflows
 - apply relevant guidance from `.agents/rules`, `.agents/learnings`, `.agents/prompts`, and `.agents/skills`
 - treat `.agents/rules` as user-defined source-of-truth for operational behavior
 

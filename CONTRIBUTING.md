@@ -7,8 +7,9 @@ Thanks for contributing.
 ## Before You Start
 
 1. Read [AGENTS.md](./AGENTS.md).
-2. Review `.agents/rules`, `.agents/learnings`, `.agents/prompts`, and `.agents/skills` before implementing.
-3. Follow [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
+2. If you are working via Anthropic Claude CLI, read [CLAUDE.md](./CLAUDE.md).
+3. Review `.agents/rules`, `.agents/learnings`, `.agents/prompts`, and `.agents/skills` before implementing.
+4. Follow [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
 
 ## Project Status
 
@@ -28,7 +29,9 @@ Thanks for contributing.
 
 If AI tooling is used for planning, implementation, review, or docs:
 
-- `AGENTS.md` is mandatory baseline guidance.
+- Use the matching baseline guidance file:
+  - `AGENTS.md` for Codex-oriented workflows
+  - `CLAUDE.md` for Anthropic Claude CLI workflows
 - linked `.agents` rules and references must be followed.
 - Contributions can include support files for additional AI agents (for example Claude, Kiro, Kilo) when they improve project maintainability and reuse.
 

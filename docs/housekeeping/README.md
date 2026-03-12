@@ -13,6 +13,11 @@ pnpm exec repo-hc init
 When `repo-hc init` runs interactively, users are prompted to optionally add VS Code `files.exclude` entries for common agent files.
 For `.agents/rules`, `.agents/learnings`, `.agents/plans`, and `.agents/prompts`, bootstrap transfers only each folder's `examples/` content.
 
+Claude CLI support note:
+
+- this repository provides `CLAUDE.md` for Anthropic Claude CLI guidance
+- package bootstrap currently guarantees `AGENTS.md` as canonical transfer file
+
 ## Documents
 
 - [Developer Guide](./developers.md)
@@ -28,4 +33,5 @@ For `.agents/rules`, `.agents/learnings`, `.agents/plans`, and `.agents/prompts`
 - [Docs Home](../README.md)
 - [Workflow Overview](../workflow/README.md)
 - [AGENTS.md](../../AGENTS.md)
+- [CLAUDE.md](../../CLAUDE.md)
 

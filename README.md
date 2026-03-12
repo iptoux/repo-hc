@@ -7,6 +7,7 @@
   <a href="https://www.npmjs.com/package/repo-hc"><img src="https://img.shields.io/npm/dm/repo-hc?style=for-the-badge&logo=npm&logoColor=white" alt="npm downloads" /></a>
   <a href="https://github.com/iptoux/repo-hc/stargazers"><img src="https://img.shields.io/github/stars/iptoux/repo-hc?style=for-the-badge&logo=github&logoColor=white" alt="GitHub stars" /></a>
   <a href="https://openai.com/"><img src="https://img.shields.io/badge/AI-OpenAI%20Codex-111827?style=for-the-badge&logo=openai&logoColor=white" alt="AI: OpenAI Codex" /></a>
+  <a href="https://www.anthropic.com/"><img src="https://img.shields.io/badge/AI-Anthropic%20Claude%20CLI-111827?style=for-the-badge" alt="AI: Anthropic Claude CLI" /></a>
   <a href="./docs/README.md"><img src="https://img.shields.io/badge/Docs-Self_Structured-0EA5E9?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Documentation: Self structured" /></a>
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Policy-DC2626?style=for-the-badge&logo=shield&logoColor=white" alt="Security policy" /></a>
   <a href="./LICENSE.txt"><img src="https://img.shields.io/badge/License-AGPL--3.0-6B7280?style=for-the-badge" alt="License: AGPL-3.0" /></a>
@@ -42,16 +43,17 @@
 - synchronized documentation
 - explicit auditability of AI-assisted work
 
-Initial optimization target: **OpenAI Codex**.
+Primary optimization targets: **OpenAI Codex** and **Anthropic Claude CLI**.
 
 ## AI Agent Workflow System
 
-AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md) and the local [`.agents/`](./.agents/README.md) knowledge base:
+AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md), [CLAUDE.md](./CLAUDE.md), and the local [`.agents/`](./.agents/README.md) knowledge base:
 
 ![repo-hc AI Workflow](./docs/assets/codex-workflow.svg)
 ![repo-hc Agent Execution Flow](./docs/assets/agent-flow.svg)
 
 - [AGENTS.md](./AGENTS.md): baseline collaboration, architecture, security, and documentation rules
+- [CLAUDE.md](./CLAUDE.md): Claude CLI baseline guidance aligned to repository rules
 - [`.agents/rules/`](./.agents/rules/): user-defined operational rules
 - [`.agents/skills/`](./.agents/skills/): reusable `SKILL.md` playbooks
 - [`.agents/learnings/`](./.agents/learnings/): implementation learnings and decisions
@@ -71,7 +73,10 @@ Install directly from npm:
 - package name: `repo-hc`
 
 > [!TIP]
-> Start every AI-assisted task with [AGENTS.md](./AGENTS.md), then continue with [`.agents/README.md`](./.agents/README.md), then [docs/README.md](./docs/README.md).
+> Start every AI-assisted task with the agent baseline file:
+> - Codex: [AGENTS.md](./AGENTS.md)
+> - Claude CLI: [CLAUDE.md](./CLAUDE.md)
+>   Then continue with [`.agents/README.md`](./.agents/README.md), then [docs/README.md](./docs/README.md).
 > The effective behavior rules are user-defined in [`/.agents/rules`](./.agents/rules/).
 
 ## Bootstrap Behavior
@@ -81,6 +86,11 @@ Run `repo-hc init` after installation to bootstrap these assets into the consume
 - `.agents/`
 - `docs/`
 - `AGENTS.md` (canonical)
+
+Claude CLI note:
+
+- `CLAUDE.md` is maintained in this repository for Claude CLI workflows.
+- Current package bootstrap guarantees `AGENTS.md` as canonical baseline file.
 
 For `.agents/`, repository-internal non-example files are excluded from transfer in:
 
@@ -130,6 +140,7 @@ Project documentation is centralized in [`docs/`](./docs/) and organized by feat
 ## Repository Layout
 
 - [AGENTS.md](./AGENTS.md): baseline guidance for AI-assisted implementation
+- [CLAUDE.md](./CLAUDE.md): baseline guidance for Anthropic Claude CLI workflows
 - [`.agents/`](./.agents/README.md): internal rules, prompts, learnings, plans, and skills
 - [docs/](./docs/README.md): public project documentation and Mermaid diagrams
 - [CONTRIBUTING.md](./CONTRIBUTING.md): contributor workflow

@@ -37,6 +37,7 @@ This folder stores reusable agent knowledge for consistent, safe, and fast colla
 - [2026-03-12-bootstrap-transfer-examples-only.md](./plans/2026-03-12-bootstrap-transfer-examples-only.md)
 - [2026-03-12-switch-to-init-first-bootstrap.md](./plans/2026-03-12-switch-to-init-first-bootstrap.md)
 - [2026-03-12-agent-flow-svg.md](./plans/2026-03-12-agent-flow-svg.md)
+- [2026-03-12-claude-cli-doc-sync.md](./plans/2026-03-12-claude-cli-doc-sync.md)
 - [examples/2026-03-11-add-docs-workflow-guides.md](./plans/examples/2026-03-11-add-docs-workflow-guides.md)
 - [examples/2026-03-11-central-api-docs-mermaid.md](./plans/examples/2026-03-11-central-api-docs-mermaid.md)
 

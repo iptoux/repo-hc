@@ -6,6 +6,11 @@ Back to docs:
 
 This section contains architecture and workflow diagrams for `repo-hc`.
 
+Agent baseline references:
+
+- [AGENTS.md](../../AGENTS.md)
+- [CLAUDE.md](../../CLAUDE.md)
+
 ## Recommended Reading Order
 
 1. [Housekeeping Package Architecture](./housekeeping-architecture.md)

@@ -5,6 +5,8 @@ Back to docs:
 - [Docs Home](../README.md)
 - [Workflow Documentation](../workflow/README.md)
 - [Housekeeping Documentation](../housekeeping/README.md)
+- [AGENTS.md](../../AGENTS.md)
+- [CLAUDE.md](../../CLAUDE.md)
 
 ## Self-Contained Documentation Structure
 
@@ -14,6 +16,7 @@ flowchart LR
   FEATURE --> DEV["docs/<feature>/developers.md"]
   FEATURE --> USER["docs/<feature>/users.md"]
   FEATURE --> MMD["docs/mermaid/*"]
+  BASELINE["AGENTS.md or CLAUDE.md"] --> FEATURE
   AGENTS[".agents/rules + plans + learnings + prompts"] --> FEATURE
 ```
 

@@ -30,7 +30,9 @@ flowchart TD
 
 ## Quick Validation Path
 
-1. Check `AGENTS.md` for baseline rules.
+1. Check the matching baseline file:
+   - Codex workflows: `AGENTS.md`
+   - Claude CLI workflows: `CLAUDE.md`
 2. Open relevant feature docs under `docs/<feature>/`.
 3. Verify matching diagrams in `docs/mermaid/`.
 4. Confirm docs and implementation were updated together.
@@ -40,3 +42,5 @@ flowchart TD
 - [Workflow Developer Guide](./developers.md)
 - [Docs Home](../README.md)
 - [Housekeeping User Guide](../housekeeping/users.md)
+- [AGENTS.md](../../AGENTS.md)
+- [CLAUDE.md](../../CLAUDE.md)

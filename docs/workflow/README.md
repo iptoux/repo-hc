@@ -18,3 +18,5 @@ Guides for the contributor workflow that keeps implementation quality, documenta
 - [Docs Home](../README.md)
 - [Project Rules](../project/rules.md)
 - [Contributing Guide](../../CONTRIBUTING.md)
+- [AGENTS.md](../../AGENTS.md)
+- [CLAUDE.md](../../CLAUDE.md)

@@ -5,7 +5,7 @@
 This repository is being prepared as a **GitHub housekeeping npm package**.
 The package goal is to help an AI agent maintain repository quality, automate repository hygiene tasks, and keep changes well documented.
 
-Current AI target: **OpenAI Codex first**.
+Current AI targets: **OpenAI Codex first**, with **Anthropic Claude CLI support** via `CLAUDE.md`.
 
 All changes must prioritize:
 
@@ -96,6 +96,7 @@ To avoid stale documentation, keep `/docs` and especially `/.agents` in sync wit
 ### AI Usage Requirement (Mandatory)
 
 - When AI tooling is used for planning, implementation, review, or documentation, `AGENTS.md` is required baseline guidance.
+- For Anthropic Claude CLI workflows, apply `CLAUDE.md` in addition to `AGENTS.md`.
 - AI-assisted work must follow this file and linked guidance in `/.agents` (`rules`, `learnings`, `prompts`, `skills`).
 
 ---

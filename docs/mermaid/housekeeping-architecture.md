@@ -5,6 +5,8 @@ Back to docs:
 - [Docs Home](../README.md)
 - [Housekeeping Documentation](../housekeeping/README.md)
 - [Workflow Documentation](../workflow/README.md)
+- [AGENTS.md](../../AGENTS.md)
+- [CLAUDE.md](../../CLAUDE.md)
 
 ## Module Boundaries
 

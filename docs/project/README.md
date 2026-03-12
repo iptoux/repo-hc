@@ -14,3 +14,4 @@ Global repository standards, contribution rules, and quality expectations.
 - [Housekeeping Overview](../housekeeping/README.md)
 - [Contributing Guide](../../CONTRIBUTING.md)
 - [AGENTS.md](../../AGENTS.md)
+- [CLAUDE.md](../../CLAUDE.md)

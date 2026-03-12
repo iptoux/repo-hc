@@ -5,7 +5,7 @@
 This repository is prepared as a **GitHub housekeeping npm package**.
 The package helps an AI agent maintain repository quality, automate repository hygiene tasks, and keep changes well documented.
 
-Current AI target: **Claude CLI first**.
+Current AI target: **Anthropic Claude CLI first**.
 
 All changes must prioritize:
 
